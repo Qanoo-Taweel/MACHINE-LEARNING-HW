@@ -1,0 +1,2 @@
+Most likely phoneme sequence: e → v
+Probability: 0.252
