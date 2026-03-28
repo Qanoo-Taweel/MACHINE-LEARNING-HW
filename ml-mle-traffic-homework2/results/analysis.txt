@@ -1,0 +1,35 @@
+MLE Estimation Results
+
+Analytical estimate:
+λ = 12.14 cars per minute
+
+Numerical estimate using optimization:
+λ = 12.14 cars per minute
+
+Both analytical and numerical approaches produce the same result,
+confirming that the Maximum Likelihood Estimator for a Poisson
+distribution equals the sample mean.
+
+Visualization Interpretation
+
+The histogram of the observed traffic data was compared with the
+Poisson probability mass function.
+
+The shape of the Poisson distribution closely follows the pattern
+of the observed data, suggesting that the Poisson model provides a
+reasonable approximation for traffic flow.
+
+Outlier Analysis
+
+If an incorrect observation such as 200 vehicles is added to the
+dataset, the mean changes drastically:
+
+Original mean ≈ 12.14  
+New mean ≈ 24.67
+
+This demonstrates that Maximum Likelihood Estimation is sensitive
+to outliers because it depends directly on the arithmetic mean.
+
+In real-world city planning, such an error could cause incorrect
+traffic predictions and lead to unnecessary infrastructure
+decisions such as widening roads.
