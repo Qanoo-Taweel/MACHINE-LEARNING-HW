@@ -16,9 +16,15 @@ Transition probabilities and emission probabilities are used to compute the most
 Repository structure:
 
 code/ : Python implementation of the Viterbi algorithm
+
 report/ : Explanation of the method and results
+
 data/ : Observation sequence
+
 results/ : Output produced by the program
+
+
+
 
 Student: Qunoo  A k Taweel
 Course: Machine Learning
