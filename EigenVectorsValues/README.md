@@ -1,5 +1,7 @@
 # Eigenvalues and Eigenvectors in Machine Learning
 
+This report explains the relationship between matrix operations, eigenvalues, and eigenvectors in machine learning, and demonstrates their computation using Python.
+
 ## 1. Matrix Manipulation, Eigenvalues, Eigenvectors and ML
 
 ### Matrix Manipulation
@@ -31,6 +33,8 @@ numpy.linalg.eig()
 
 This function takes a square matrix and returns its eigenvalues and eigenvectors.
 
+The eig() function computes eigenvalues and eigenvectors using efficient numerical linear algebra algorithms. It is widely used in machine learning applications.
+
 Example:
 
 ```python
@@ -48,6 +52,11 @@ A = [[4, 2],
 Manual calculation gives eigenvalues:
 5 and 2
 NumPy gives similar results.
+
+This implementation is inspired by the GitHub repository:
+https://github.com/LucasBN/Eigenvalues-and-Eigenvectors
+
+The repository demonstrates how eigenvalues can be calculated without using NumPy. In this assignment, a similar approach is followed using the characteristic equation.
 
 ---
 
