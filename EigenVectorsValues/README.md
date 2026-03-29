@@ -63,6 +63,7 @@ Eigenvalues and eigenvectors are very important in machine learning. They help u
 - https://machinelearningmastery.com/introduction-to-eigendecomposition-eigenvalues-and-eigenvectors/
 - https://numpy.org/doc/2.1/reference/generated/numpy.linalg.eig.html
 - https://github.com/numpy/numpy/tree/main/numpy/linalg
+- https://github.com/LucasBN/Eigenvalues-and-Eigenvectors
 
-
+This work was implemented based on the provided resources and adapted for this assignment.
 
