@@ -1,6 +1,8 @@
 # Machine Learning Homework 4
 
-## Bayesian Brightness Estimation using MCMC
+**Student:** Qunoo A K Taweel
+**Course:** Machine Learning
+**Homework:** 4
 
 ---
 
@@ -28,6 +30,8 @@ The data is sampled from a normal distribution with added noise.
 
 We applied Bayesian Inference using Markov Chain Monte Carlo (MCMC) with the `emcee` library.
 
+**Libraries used:** numpy, matplotlib, emcee, corner
+
 Steps:
 
 1. Define the log-likelihood function
@@ -35,6 +39,8 @@ Steps:
 3. Combine them into the log-posterior
 4. Run MCMC sampling
 5. Extract parameter estimates from posterior samples
+
+The first 500 samples were discarded as *burn-in* to ensure convergence.
 
 ---
 
@@ -77,7 +83,7 @@ The estimated brightness (μ = 147.79) is close to the true value (150), with a 
 
 ### Precision
 
-The estimate of μ is more precise than σ. This is because the mean stabilizes faster with increasing data, while estimating variance requires more data. With n = 50, μ is well estimated, but σ still shows more uncertainty.
+The estimate of μ is more precise than σ. This is because the mean stabilizes faster with increasing data, while variance estimation depends on squared deviations and is more sensitive to noise. With n = 50, μ converges faster than σ, leading to a narrower uncertainty range.
 
 ---
 
@@ -86,6 +92,21 @@ The estimate of μ is more precise than σ. This is because the mean stabilizes 
 The corner plot shows a slight tilt in the joint distribution of μ and σ, indicating a weak correlation between them. This means the estimates are not completely independent.
 
 ---
+
+### Repository Structure
+
+The project repository is organized as follows:
+
+main.py → Python implementation of Bayesian MCMC simulation
+
+README.md → Project description, results, and analysis
+
+Figure_1.png → Visualization (corner plot of posterior distributions)
+
+Only the necessary files are included to keep the repository clean and focused.
+
+---
+
 
 ## ✅ Conclusion
 
